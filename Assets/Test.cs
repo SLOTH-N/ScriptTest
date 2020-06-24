@@ -11,7 +11,7 @@ public class Boss
     // 攻撃用の関数
     public void Attack()
     {
-        //Debug.Log(this.power + "のダメージを与えた");
+        Debug.Log(this.power + "のダメージを与えた");
     }
     public void Magic()
     {
@@ -28,7 +28,7 @@ public class Boss
     // 防御用の関数
     public void Defence(int damage)
     {
-       // Debug.Log(damage + "のダメージを受けた");
+        Debug.Log(damage + "のダメージを受けた");
         // 残りhpを減らす
         this.hp -= damage;
     }
@@ -54,8 +54,8 @@ public class Test : MonoBehaviour {
         lastboss.Defence(3);
         for (int i = 0; i<array.Length; i++)
         {
-           // Debug.Log(array[i]);
-           // Debug.Log(array[4 - i]);
+            Debug.Log(array[i]);
+            Debug.Log(array[4 - i]);
         }
         
     }
